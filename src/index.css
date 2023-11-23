@@ -1,0 +1,456 @@
+:root {
+  --primary-text: ##6e6d6d;
+  --second-text: #505050;
+  --primary: #f7f6f6;
+  --v2: #feb200;
+  --second-bgc: #f1a661;
+  --main-color: #ffd8a9;
+  --second-color: #fdeedc;
+}
+
+* {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Comix Sans MS", cursive;
+}
+/* Navbar */
+.container-navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.9);
+  z-index: 99;
+}
+
+.container-logo-out {
+  display: flex;
+  float: inline-start;
+  width: 350px;
+}
+
+.container-logo {
+  float: inline-start;
+  width: 370px;
+  border-top: 100px solid #feb200;
+  border-right: 40px solid transparent;
+}
+
+.logo-navbar {
+  margin-left: -290px;
+  float: inline-start;
+  width: 60%;
+}
+
+.navbar-up {
+  height: 50px;
+  width: 100%;
+  background-color: #1b2426;
+  align-items: center;
+}
+
+.container-kontak {
+  margin-right: 110px;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.email-icon {
+  margin-right: 0.5rem;
+}
+
+.telpon-icon {
+  margin: 0.5rem;
+  margin-left: 1rem;
+}
+
+.span-for-kontak {
+  color: #f8f8f8;
+}
+
+.navbar-bottom {
+  font-family: "Comic Sans MS", cursive;
+  height: 50px;
+  font-weight: bold;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-right: 110px;
+  gap: 4rem;
+}
+
+.navbar-bottom .nav-link a {
+  padding: 4px 10px 5px 10px;
+  text-decoration: none;
+  color: #6e6d6d;
+}
+
+.navbar-bottom .nav-link a:hover {
+  color: var(--primary);
+  background-color: var(--v2);
+  border-radius: 5px;
+}
+
+.navbar-bottom .nav-link .active {
+  background-color: var(--v2);
+  color: var(--primary);
+  width: 340px;
+  height: 120px;
+  border-radius: 5px;
+  transform: skew(-20deg); /* Kenapa gabisaa euyyy????? */
+}
+
+/* Hero Section */
+.jumbotron {
+  height: 100vh;
+  padding: 1.4rem 4%;
+  background-image: url(assets/herosection.png);
+  background-size: cover;
+  background-position: center;
+  color: var(--primary);
+}
+
+.content {
+  padding: 250px 0px 0px 820px;
+  letter-spacing: 2px;
+}
+.content p {
+  max-width: 42rem;
+  text-align: justify;
+  /* font-family: Commissioner; */
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  line-height: 25px;
+}
+.detail-btn {
+  background-color: #1b2426;
+  color: var(--primary);
+}
+/* Jajar Genjang */
+
+.jajar-genjang {
+  width: 40px;
+  height: 120px;
+  transform: skew(-20deg);
+  background-color: #feb200;
+}
+/* Pelayanan Section */
+.pelayanan {
+  background-color: var(--v2);
+  min-height: 80vh;
+}
+
+.pelayanan .card {
+  padding: 2rem;
+  align-items: center;
+  height: 23rem;
+  border-radius: 40px;
+  box-shadow: 0px 10px 10px 10px rgba(0, 0, 0, 0.25);
+}
+.pelayanan h1 {
+  color: var(--primary-text);
+}
+.pelayanan p {
+  text-align: justify;
+  color: var(--primary-text);
+}
+/* Button */
+.button-all {
+  padding: 6px 12px;
+  transform: skew(-20deg);
+  border-radius: 8px;
+  background-color: #1b2426;
+  color: #f8f8f8;
+}
+
+.container-button-next {
+  background-color: #1b2426;
+  color: #f8f8f8;
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.container-button-next .right-panah {
+  margin-right: 1.5rem;
+  background-color: #feb200;
+}
+
+.container-button-next-inner {
+  color: #f8f8f8;
+}
+
+.container-button-next-inner svg {
+  float: inline-start;
+}
+
+.container-button-next-inner span {
+  float: inline-start;
+  margin-right: -80px;
+  color: #f8f8f8;
+}
+/* Button End*/
+
+/* Testimoni */
+.testimoni img {
+  width: 20%;
+}
+
+.testimoni .swiper {
+  background-color: var(--v2);
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  padding: 60px 40px;
+}
+
+.testimoni .swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: #fff;
+  padding: 20px;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: grabing;
+}
+.testimoni .swiper-slide:active {
+  cursor: grabbing;
+}
+.testimoni .swiper-slide .desc {
+  color: var(--primary-text);
+  margin-bottom: 30px;
+  text-align: justify;
+}
+.testimoni .swiper-slide .people {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 15px;
+}
+
+.testimoni .swiper-slide .people h5 {
+  color: var(--primary-text);
+}
+
+.testimoni .swiper-slide .people img {
+  width: 80px;
+  border-radius: 100%;
+}
+.testimoni .swiper-slide .people i {
+  color: gold;
+}
+/* Komunitas */
+.komunitas {
+  height: 250px;
+  background-color: var(--primary);
+}
+.comunityname {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6rem;
+  padding: 50px 50px 50px 120px;
+}
+.komunitas h1 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 25px;
+  color: var(--primary-text);
+}
+
+/* Informasi.css */
+.container-bg {
+  width: 100%;
+}
+
+.container-bg1-informasi p {
+  margin-right: 10%;
+  margin-left: 5%;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.container-bg1 {
+  width: 300px;
+  height: 210px;
+  margin-left: 10%;
+}
+.container-bg1-informasi {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.container-bg1-informasi .container-bg1 {
+  margin-right: 5; /* Adjust the margin as needed */
+}
+
+.container-bg2-informasi p {
+  margin-right: 10%;
+  margin-left: 5%;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: justify;
+}
+.container-bg2 {
+  width: 300px;
+  height: 210px;
+  margin-left: 10%;
+}
+.container-bg2-informasi {
+  margin-top: 50px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.container-bg2-informasi .container-bg2 {
+  margin-right: 5;
+}
+
+/* button informasi */
+.container-bg1-informasi,
+.container-bg2-informasi {
+  position: relative;
+}
+
+.ButtonContainer {
+  margin-top: 220px;
+  position: absolute;
+  right: 10%;
+  top: 0;
+}
+
+.container-bg-informasi {
+  position: relative;
+}
+
+.container-bg-informasi {
+  position: relative;
+}
+
+/*Text dalam background */
+
+.image-with-text {
+  width: 100%;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  background: white;
+  opacity: 85%;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.text-overlay h1 {
+  margin: 0;
+  font-size: 2em;
+}
+.text-overlay p.location-text {
+  font-size: 40px;
+}
+
+/* Footer */
+
+.footer-top {
+  background-color: #1b2426;
+  color: #feb200;
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.container-text-top {
+  width: 92%;
+  display: flex;
+}
+
+.container-logo-footer-top {
+  display: flex;
+  justify-content: center;
+}
+
+/* .container-link-kilat {
+  display: flex;
+  justify-content: center;
+} */
+
+.container-text1-footer-top {
+  text-align: justify;
+  color: #f8f8f8;
+}
+
+.logo-footer {
+  height: 72px;
+  margin-bottom: 1rem;
+  float: inherit;
+}
+
+.container-link-kilat-top {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 72px;
+}
+
+.container-link-kilat-top p {
+  font-size: xx-large;
+}
+
+.container-link-kilat-bottom {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+}
+
+.container-link-kilat-bottom p {
+  margin-left: 10px;
+  color: #f8f8f8;
+}
+
+.container-logo-footer,
+.container-link-kilat,
+.container-alamat,
+.container-link-sosmed {
+  width: 23%;
+  margin: 1rem 0.4rem;
+}
+
+.footer-bottom {
+  font-family: "Comic Sans MS", cursive;
+  font-weight: bold;
+  display: flex;
+  height: 40px;
+  background-color: #feb200;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  height: 1500px;
+}
+
+/* Footer End */
